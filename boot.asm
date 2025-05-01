@@ -1,3 +1,7 @@
+; boot.asm - minimal x86 BIOS bootloader
+; Assemble with: nasm -f bin boot.asm -o boot.bin
+; Write to disk/image: dd if=boot.bin of=floppy.img bs=512 count=1
+
 [org 0x7C00]
 [BITS 16]
 
